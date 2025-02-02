@@ -8,3 +8,8 @@ function adicionarAmigo(){
     document.getElementById('listaAmigos').innerHTML += `<li>${nomes[contador]}</li>`;
     contador++;
 }
+
+function sortearAmigo(){
+    let sorteado = Math.floor(Math.random() * nomes.length);
+    document.getElementById('resultado').innerHTML = nomes[sorteado];
+}
